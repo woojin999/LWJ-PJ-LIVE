@@ -156,7 +156,7 @@ function prdGoSlide() {
   } else {
     prdSlBtn[1].style.display = "block";
   }
-  console.log("snum", snum);
+  // console.log("snum", snum);
 
   prdslide.style.transition = ".6s ease-in-out";
 }
@@ -223,7 +223,7 @@ let closeHam = document.querySelector(".close-ham");
 let hamMenu = document.querySelector(".ham-menu");
 let mwrap = document.querySelectorAll(".mwrap");
 let mwrapList = document.querySelectorAll(".menu-list ul li ul");
-console.log(mwrapList);
+// console.log(mwrapList);
 
 // 이벤트 파트/////////////
 let evtBtn = document.querySelectorAll(".evtbtn");
@@ -266,28 +266,28 @@ slBtn[2].addEventListener("click", function () {
 // 우측 메뉴 클릭 열기
 openHam.addEventListener("click", function () {
   hamMenu.classList.add("on");
-  console.log(hamMenu.offsetWidth);
+  // console.log(hamMenu.offsetWidth);
 });
 // 우측메뉴 닫기
 closeHam.addEventListener("click", function () {
   hamMenu.classList.remove("on");
-  console.log(hamMenu.offsetWidth);
+  // console.log(hamMenu.offsetWidth);
 });
 
 mwrap.forEach((ele, i) => {
   ele.onclick = () => {
     
     for (const x of mwrapList) {
-      console.log(x);
+      // console.log(x);
       x.style.padding = '0 0';
       x.style.height = '0';
       x.style.border = '0';
     }
 
     mwrapList[i].style.padding = "30px 0";
-    console.log(ele, i);
+    // console.log(ele, i);
     mwrapList[i].style.height = "auto";
-    console.log(ele, i);
+    // console.log(ele, i);
     mwrapList[i].style.border = "2px solid #000;";
   };
 });
@@ -306,8 +306,6 @@ function evtGoSlide() {
   }, 600);
 
   let isEventRbtn = this.classList.contains("eventbtn2");
-  // console.log(isEventRbtn);
-  console.log(evtImgWrap.offsetWidth);
   if (isEventRbtn) {
     if (evtImgWrap.offsetWidth > 934) {
       eventslide.style.left = "-33.333%";
@@ -355,7 +353,6 @@ const v2 = document.querySelector(".v2");
 let islv = true;
 
 videoMV.onclick = () => {
-  console.log("비디오 무비");
 
   videoMV.innerHTML = `
     <iframe src="https://www.youtube.com/embed/${

@@ -13,7 +13,7 @@ closeHam.addEventListener("click", function () {
 });
 
 // 스크롤
-console.log(window.scrollY);
+// console.log(window.scrollY);
 
 window.addEventListener("wheel", subWheelFn);
 
@@ -26,13 +26,13 @@ let brandBox = document.querySelectorAll(".brand-box");
 let blistBox = document.querySelector('.blist.on strong');
 
 
-console.log(blistBox);
+// console.log(blistBox);
 brandBox[0].style.visibility = "visible";
 function subWheelFn(e) {
   // console.log("휠");
   // e.preventDefault();
   let scrollY = window.scrollY;
-  console.log(scrollY);
+  // console.log(scrollY);
   brandBox.forEach((ele) => {
     ele.style.visibility = "hidden";
     ele.style.transition = "none";
@@ -73,7 +73,7 @@ let docH = document.body.clientHeight;
 let winH =  window.innerHeight;
 // 스크롤 한계값
 let scLlimit = docH - winH;
-console.log('문서높이', docH,'\n화면높이:',winH,'\n한계값',scLlimit);
+// console.log('문서높이', docH,'\n화면높이:',winH,'\n한계값',scLlimit);
 
 const cheese = document.querySelector('#cheese');
 const sham = document.querySelector('#sham');
@@ -86,11 +86,11 @@ const sweet04 = document.querySelector('#sweet04');
 const soft01 = document.querySelector('#soft01');
 const soft02 = document.querySelector('#soft02');
 const soft03 = document.querySelector('#soft03');
-console.log(cheese);
+// console.log(cheese);
 
 window.addEventListener('scroll',moveCheese);
 function moveCheese() {
-    console.log('cheese');
+    // console.log('cheese');
 
     let scTop = window.scrollY;
 
