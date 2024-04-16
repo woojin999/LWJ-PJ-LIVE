@@ -28,7 +28,7 @@ const comData = {
                           <div class="dash"></div>
                           <ol>
                             <li>
-                              <a href="">홍루이젠 소개</a>
+                              <a href="./brandstory.html">홍루이젠 소개</a>
                             </li>
                             <li>
                               <a href="">브랜드철학</a>
